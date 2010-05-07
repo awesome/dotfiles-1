@@ -24,6 +24,7 @@ hardstatus alwayslastline "%{=b}%{G} : %{b}%w %=%{kG}%C%A"
 
 # copy screen clipboard to mac clipboard
 bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
+bind g eval "writebuf" "exec sh -c 'gist -p /tmp/screen-exchange | pbcopy'"
 
 # enable bold
 attrcolor b ".I"
