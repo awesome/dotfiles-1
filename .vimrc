@@ -234,6 +234,7 @@ map ,s :call StripWhitespace ()<CR>
 " File Types
 " ---------------------------------------------------------------------------
 
+au BufRead,BufNewFile *.go         set ft=go
 au BufRead,BufNewFile *.rpdf       set ft=ruby
 au BufRead,BufNewFile *.rxls       set ft=ruby
 au BufRead,BufNewFile *.ru         set ft=ruby
