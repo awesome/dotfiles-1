@@ -119,6 +119,14 @@ imap <C-e> <C-o>$
 map <C-e> $
 map <C-a> 0
 
+" command-t
+noremap ,t :CommandT<CR>
+noremap ,, :!ruby -I lib %<CR>
+noremap ,T :!ruby -I lib test/*_test.rb<CR>
+
+" rubytest
+let g:rubytest_cmd_test = "ruby -I lib %p"
+
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
 vnoremap Q gq
