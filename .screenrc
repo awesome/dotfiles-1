@@ -23,6 +23,7 @@ defutf8 on
 hardstatus alwayslastline "%{=b}%{G} : %{b}%w %=%{kG}%C%A"
 
 # copy screen clipboard to mac clipboard
+bind p eval "writebuf" "exec sh -c 'cat /tmp/screen-exchange'"
 bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
 bind g eval "writebuf" "exec sh -c 'gist -p /tmp/screen-exchange | pbcopy'"
 
