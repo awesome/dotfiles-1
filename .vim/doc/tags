@@ -18,6 +18,7 @@
 :Rexplore	pi_netrw.txt	/*:Rexplore*
 :Texplore	pi_netrw.txt	/*:Texplore*
 :Vexplore	pi_netrw.txt	/*:Vexplore*
+ConqueTerm	conque_term.txt	/*ConqueTerm*
 LookupFile-command	lookupfile.txt	/*LookupFile-command*
 LookupFile_AllowNewFiles	lookupfile.txt	/*LookupFile_AllowNewFiles*
 LookupFile_AlwaysAcceptFirst	lookupfile.txt	/*LookupFile_AlwaysAcceptFirst*
@@ -71,6 +72,13 @@ command-t-website	command-t.txt	/*command-t-website*
 command-t-wildignore	command-t.txt	/*command-t-wildignore*
 command-t.txt	command-t.txt	/*command-t.txt*
 config/rails.vim	rails.txt	/*config\/rails.vim*
+conque_term-bugs	conque_term.txt	/*conque_term-bugs*
+conque_term-changelog	conque_term.txt	/*conque_term-changelog*
+conque_term-contribute	conque_term.txt	/*conque_term-contribute*
+conque_term-requirements	conque_term.txt	/*conque_term-requirements*
+conque_term-settings	conque_term.txt	/*conque_term-settings*
+conque_term-todo	conque_term.txt	/*conque_term-todo*
+conque_term-usage	conque_term.txt	/*conque_term-usage*
 dav	pi_netrw.txt	/*dav*
 davs	pi_netrw.txt	/*davs*
 fetch	pi_netrw.txt	/*fetch*

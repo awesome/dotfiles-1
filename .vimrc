@@ -108,6 +108,9 @@ set virtualedit=block      " allow virtual edit in visual block ..
 "  Mappings
 " ----------------------------------------------------------------------------
 
+" CTags
+map ,rt :!ctags --extra=+f -R *<CR><CR>
+
 " quickfix mappings
 map <F7>  :cn<CR>
 map <S-F7> :cp<CR>
@@ -121,11 +124,9 @@ map <C-a> 0
 
 " command-t
 noremap ,t :CommandT<CR>
-noremap ,, :!ruby -I lib %<CR>
-noremap ,T :!ruby -I lib test/*_test.rb<CR>
+noremap ,4 :Ack <cword><CR>
 
-" rubytest
-let g:rubytest_cmd_test = "ruby -I lib %p"
+" ack
 
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
@@ -243,6 +244,7 @@ map ,s :call StripWhitespace ()<CR>
 " ---------------------------------------------------------------------------
 
 au BufRead,BufNewFile *.go         set ft=go
+au BufRead,BufNewFile *.mustache   set ft=mustache
 au BufRead,BufNewFile *.rpdf       set ft=ruby
 au BufRead,BufNewFile *.rxls       set ft=ruby
 au BufRead,BufNewFile *.ru         set ft=ruby
