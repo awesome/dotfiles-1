@@ -4,3 +4,5 @@
 
 --type-set
 ronn=.ronn,.ron
+--type-set
+go=.go
