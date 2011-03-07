@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby
-require 'rubygems'
+#!/usr/bin/env python
 
 # Copyright 2011 Keith Rarick <kr@xph.us>
 #
@@ -21,19 +20,16 @@ require 'rubygems'
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-require 'json'
-require 'pp'
+import json, sys
 
-x = JSON.parse($stdin.read)
+x = json.load(sys.stdin)
 
-for k in ARGV
-  i = Integer(k) rescue nil
-  k = i if String(i) == k
-  x = x[k]
-end
+for k in sys.argv[1:]:
+    try:
+        i = int(k)
+        k = i
+    except:
+        pass
+    x = x[k]
 
-case x
-when String then print x
-when Array  then puts x
-else             pp x
-end
+print x
