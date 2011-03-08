@@ -24,7 +24,12 @@ import json, sys
 
 x = json.load(sys.stdin)
 
+onlykeys = False
 for k in sys.argv[1:]:
+    if k == '-k':
+        onlykeys = True
+        continue
+
     try:
         i = int(k)
         k = i
@@ -32,4 +37,12 @@ for k in sys.argv[1:]:
         pass
     x = x[k]
 
-print x
+if isinstance(x, list):
+    for l in x: print l
+elif isinstance(x, dict):
+    if onlykeys:
+        for l in x.keys(): print l
+    else:
+        print x
+else:
+    print x
