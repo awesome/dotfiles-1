@@ -5,4 +5,6 @@ setlocal tabstop=4
 setlocal listchars=tab:›\ 
 setlocal comments=://
 
-nnoremap <buffer> gt mT?^func <CR>w"ayw`T:noh<CR>:!gotest -v -match <C-R>a<CR>
+set mp=gomake
+
+nnoremap <buffer> gt mT?^func <CR>w"ayw`T:noh<CR>:!gotest -test.v -test.run <C-R>a<CR>
