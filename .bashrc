@@ -152,8 +152,8 @@ prompt_compact() {
 }
 
 prompt_color() {
-    PS1="${GREY}[${COLOR1}\u${GREY}@${COLOR2}\h${GREY}:${COLOR1}\W${GREY}]${COLOR2}$P${PS_CLEAR} "
-    PS2="\[[33;1m\]continue \[[0m[1m\]> "
+    PS1="; "
+    PS2="> "
 }
 
 # ----------------------------------------------------------------------
